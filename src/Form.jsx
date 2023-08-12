@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import myImage from "./assets/images/at.jpg";
 const Form = () => {
   const [passwordType, setPasswordType] = useState("password");
   const showPassword = () => {
@@ -84,7 +84,7 @@ const Form = () => {
       {error.name && <p>{error.name}</p>}
       {error.email && <p>{error.email}</p>}
       {error.password && <p>{error.password}</p>}
-      <img src="../images/at.jpg" alt="" style={{ width: "100%" }} />
+      <img src={myImage} alt="" style={{ width: "100%" }} />
     </>
   );
 };
