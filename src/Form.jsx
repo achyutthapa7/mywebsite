@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import myImage from "./assets/images/at.jpg";
 import myAnotherImage from "./assets/images/gggg.jpg";
+import { Fade } from "react-reveal";
 const Form = () => {
   const [passwordType, setPasswordType] = useState("password");
   const showPassword = () => {
@@ -85,8 +86,12 @@ const Form = () => {
       {error.name && <p>{error.name}</p>}
       {error.email && <p>{error.email}</p>}
       {error.password && <p>{error.password}</p>}
-      <img src={myImage} alt="" style={{ width: "100%" }} />
-      <img src={myAnotherImage} alt="" style={{ width: "100%" }} />
+      <Fade left>
+        <img src={myImage} alt="" style={{ width: "100%" }} />
+      </Fade>
+      <Fade right>
+        <img src={myAnotherImage} alt="" style={{ width: "100%" }} />
+      </Fade>
     </>
   );
 };
