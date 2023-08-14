@@ -3,8 +3,8 @@ import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { HashLink as Link } from "react-router-hash-link";
-
 import IconButton from "@mui/material/IconButton";
 import { BrowserRouter } from "react-router-dom";
 import { Typography } from "@mui/material";
@@ -31,15 +31,31 @@ const Hammenu = () => {
             aria-controls={open ? "account-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
+            sx={{
+              ":hover": {
+                background: "none",
+              },
+            }}
           >
-            <MenuIcon
-              sx={{
-                display: { xs: "flex", md: "none" },
-                fontSize: "40px",
-                cursor: "pointer",
-                color: "white",
-              }}
-            />
+            {open ? (
+              <CloseIcon
+                sx={{
+                  display: { xs: "flex", md: "none" },
+                  fontSize: "40px",
+                  cursor: "pointer",
+                  color: "white",
+                }}
+              />
+            ) : (
+              <Box
+                className="ham_menu"
+                sx={{ display: { md: "none", xs: "flex" } }}
+              >
+                <div className="line1"></div>
+                <div className="line2"></div>
+                <div className="line3"></div>
+              </Box>
+            )}
           </IconButton>
         </Box>
         <Menu

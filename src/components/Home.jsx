@@ -4,6 +4,7 @@ import { Box, Button, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import { HashLink as Link } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
+import { Fade } from "react-reveal";
 const Styledbox = styled(Box)({
   width: "100%",
   height: "auto",
@@ -41,51 +42,53 @@ const Home = () => {
               ACHYUT THAPA
             </Typography>
           </div>
-          <Box
-            sx={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-
-              flexDirection: { md: "row", xs: "column" },
-            }}
-          >
-            <BrowserRouter>
-              <div>
-                <Link smooth to="#Contact" className="Link">
-                  <Button
-                    variant="Text"
-                    sx={{
-                      border: "1px solid white",
-                      padding: "20px 25px",
-                      letterSpacing: "3px",
-                      fontSize: "17px",
-                    }}
-                  >
-                    HIRE ME
-                  </Button>
-                </Link>
-              </div>
-              <div>
-                <Link smooth to="#Work" className="Link">
-                  <Button
-                    variant="Text"
-                    sx={{
-                      letterSpacing: "3px",
-                      padding: "20px 20px",
-                      fontSize: "17px",
-                      ":hover": {
-                        background: "#bc9e32",
-                      },
-                    }}
-                  >
-                    MY WORK
-                  </Button>
-                </Link>
-              </div>
-            </BrowserRouter>
-          </Box>
+          <Fade bottom>
+            <Box
+              sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "5px",
+                flexDirection: { md: "row", xs: "column" },
+              }}
+            >
+              <BrowserRouter>
+                <div>
+                  <Link smooth to="#Contact" className="Link">
+                    <Button
+                      variant="Text"
+                      sx={{
+                        border: "1px solid white",
+                        padding: "20px 25px",
+                        letterSpacing: "3px",
+                        fontSize: "17px",
+                      }}
+                    >
+                      HIRE ME
+                    </Button>
+                  </Link>
+                </div>
+                <div>
+                  <Link smooth to="#Work" className="Link">
+                    <Button
+                      variant="Text"
+                      sx={{
+                        letterSpacing: "3px",
+                        padding: "20px 20px",
+                        fontSize: "17px",
+                        ":hover": {
+                          background: "#bc9e32",
+                        },
+                      }}
+                    >
+                      MY WORK
+                    </Button>
+                  </Link>
+                </div>
+              </BrowserRouter>
+            </Box>
+          </Fade>
         </Styledbox>
       </section>
     </>
