@@ -1,39 +1,20 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import Home from "./components/Home";
+import About from "./components/About";
+import Work from "./components/Work";
+import Contact from "./components/Contact";
 
-function App() {
-  const [count, setCount] = useState(0);
+// import Form from "./components/Form";
 
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>My Name Is Achyut Thapa</h1>
-      <p>
-        I have changed again something let's wheather i can push it on git hub
-        or not
-      </p>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Home />
+      <About />
+      <Work />
+      <Contact />
+      {/* <Form /> */}
     </>
   );
-}
+};
 
 export default App;
