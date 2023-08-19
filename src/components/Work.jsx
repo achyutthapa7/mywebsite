@@ -5,7 +5,12 @@ const Work = () => {
   return (
     <>
       <section id="Work">
-        <Typography variant="h4">My Works</Typography>
+        <Typography
+          variant="h4"
+          sx={{ marginBottom: "20px", padding: "0 20px" }}
+        >
+          My Works
+        </Typography>
       </section>
     </>
   );

@@ -131,8 +131,8 @@ const About = () => {
                 When I'm not studying or attending classes, you'll often find me
                 immersed in the world of programming. I'm particularly
                 passionate about web development, and I've taken it upon myself
-                to learn various technologies and languages. From JavaScript and
-                React to HTML and CSS, I've delved into these technologies
+                to learn various technologies and languages. From HTML and CSS
+                to JavaScript and React, I've delved into these technologies
                 through self-teaching and hands-on projects. You can often find
                 my code on GitHub, where I document my progress and collaborate
                 with fellow developers. At the age of 19, I'm eager to continue
