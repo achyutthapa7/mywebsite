@@ -7,22 +7,20 @@ import { CardActionArea } from "@mui/material";
 
 export default function Cardsample(props) {
   return (
-    <a href={props.link} target="_blank">
-      <Card>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="200"
-            image={props.imgSrc}
-            alt="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {props.name}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-    </a>
+    <Card>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="200"
+          image={props.imgSrc}
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {props.name}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 }
