@@ -74,7 +74,13 @@ const Contact = () => {
             item
             md="6"
             xs="12"
-            sx={{ display: "flex", flexDirection: "column", gap: "30px" }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "30px",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
           >
             <Fade left>
               <div>
@@ -82,7 +88,7 @@ const Contact = () => {
                   <img
                     src={connectwithme}
                     alt="image"
-                    style={{ width: "50%" }}
+                    style={{ width: "100%" }}
                   />
                 </div>
                 <div
