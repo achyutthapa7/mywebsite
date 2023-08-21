@@ -22,14 +22,46 @@ const Work = () => {
         </Typography>
         <div className="cards">
           <Fade bottom>
-            <Cardsample imgSrc={calculator} name="calculator app" />
-            <Cardsample imgSrc={genderguess} name="genderguess app" />
-            <Cardsample imgSrc={jokegenerator} name="jokegenerator app" />
-            <Cardsample imgSrc={movie} name="movie app" />
-            <Cardsample imgSrc={rps} name="rock paper scissor" />
-            <Cardsample imgSrc={tictactoe} name="tic tac toe" />
-            <Cardsample imgSrc={todo} name="todo app" />
-            <Cardsample imgSrc={weather} name="weather app" />
+            <Cardsample
+              imgSrc={calculator}
+              link="https://achyutthapa7.github.io/Calculator/"
+              name="calculator app"
+            />
+            <Cardsample
+              imgSrc={genderguess}
+              link="https://achyutthapa7.github.io/Genderguess/"
+              name="genderguess app"
+            />
+            <Cardsample
+              imgSrc={jokegenerator}
+              link="https://achyutthapa7.github.io/Joke-generator/"
+              name="jokegenerator app"
+            />
+            <Cardsample
+              imgSrc={movie}
+              link="https://achyutthapa7.github.io/Movie/"
+              name="movie app"
+            />
+            <Cardsample
+              imgSrc={rps}
+              link="https://achyutthapa7.github.io/rockpaperscissor/"
+              name="rock paper scissor"
+            />
+            <Cardsample
+              imgSrc={tictactoe}
+              link="https://achyutthapa7.github.io/tictactoe/"
+              name="tic tac toe"
+            />
+            <Cardsample
+              imgSrc={todo}
+              link="https://achyutthapa7.github.io/todo-app/"
+              name="todo app"
+            />
+            <Cardsample
+              imgSrc={weather}
+              link="https://achyutthapa7.github.io/weather-app/"
+              name="weather app"
+            />
           </Fade>
         </div>
       </section>

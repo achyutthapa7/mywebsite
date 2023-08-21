@@ -1,4 +1,5 @@
 import { Button, Grid, Typography } from "@mui/material";
+
 import React, { useState } from "react";
 import connectwithme from "/src/assets/images/connectwithme.jpg";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
@@ -7,6 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Fade from "react-reveal";
+
 const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,17 +20,13 @@ const Contact = () => {
     let EMAIL = document.querySelector("#email");
     let SUBJECT = document.querySelector("#subject");
     let MESSAGE = document.querySelector("#message");
-    if (NAME.value === "") {
-      alert("Name Is Required");
-    }
-    if (EMAIL.value === "") {
-      alert("Email Is Required");
-    }
-    if (SUBJECT.value === "") {
-      alert("Subject Is Required");
-    }
-    if (MESSAGE.value === "") {
-      alert("Message Is Required");
+    if (
+      NAME.value === "" ||
+      EMAIL.value === "" ||
+      SUBJECT.value === "" ||
+      MESSAGE.value === ""
+    ) {
+      alert("You Must Fill Everything!!!");
     }
   };
   const showSuccess = () => {
